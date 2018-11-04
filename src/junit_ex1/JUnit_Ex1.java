@@ -16,7 +16,7 @@ public class JUnit_Ex1 {
      */
     public static void main(String[] args) throws Exception{
         //EquacaoGeralReta teste = new EquacaoGeralReta("1,2", "2,1");
-        EquacaoGeralReta teste = new EquacaoGeralReta("-1,2", "-2,5");
+        EquacaoGeralReta teste = new EquacaoGeralReta("10,15", "20,-50");
         teste.geraMatriz();
         
         System.out.println(teste.getExpressaoDiagonal(0, true));
