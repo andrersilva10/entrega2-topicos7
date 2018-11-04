@@ -22,16 +22,6 @@ public class JUnit_Ex1 {
     public static void main(String[] args) throws Exception{
         //EquacaoGeralReta teste = new EquacaoGeralReta("1,2", "2,1");
         EquacaoGeralReta teste = new EquacaoGeralReta("-2,-2", "-5,-8");
-        teste.geraMatriz();
-        
-        System.out.println(teste.getExpressaoDiagonal(0, true));
-        System.out.println(teste.getExpressaoDiagonal(1, true));
-        System.out.println(teste.getExpressaoDiagonal(2, true));
-        
-        
-        System.out.println(teste.getExpressaoDiagonal(0, false));
-        System.out.println(teste.getExpressaoDiagonal(1, false));
-        System.out.println(teste.getExpressaoDiagonal(2, false));
        
         System.out.println(teste.calcula());
         

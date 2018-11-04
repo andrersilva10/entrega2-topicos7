@@ -33,7 +33,7 @@ public class EquacaoGeralRetaTest {
     public void testCalcula1() throws Exception {
         System.out.println("calcula1");
         EquacaoGeralReta instance = new EquacaoGeralReta("-1,2", "-2,5");
-        String expResult = "-3x-1y-1";
+        String expResult = "-3x-1y-1=0";
         String result = instance.calcula();
         assertEquals(expResult, result);
     }
@@ -42,30 +42,31 @@ public class EquacaoGeralRetaTest {
     public void testCalcula2() throws Exception {
         System.out.println("calcula2");
         EquacaoGeralReta instance = new EquacaoGeralReta("1,2", "3,8");
-        String expResult = "-6x+2y+2";
+        String expResult = "-6x+2y+2=0";
         String result = instance.calcula();
         assertEquals(expResult, result);
     }
-
+    
+    //não foi passado parametro corretamente
     @Test
     public void testCalcula3() throws Exception {
         try {
             System.out.println("calcula3");
             EquacaoGeralReta instance = new EquacaoGeralReta();
-            String expResult = "-6x+2y+2";
+            String expResult = "-6x+2y+2=0";
             String result = instance.calcula();
             fail();
         } catch (Exception err) {
             assertTrue(true);
         }
     }
-
+    //parametros passados com formato incorreto
     @Test
     public void testCalcula4() throws Exception {
         try {
             System.out.println("calcula4");
             EquacaoGeralReta instance = new EquacaoGeralReta("formato errado1","formato errado2");
-            String expResult = "-6x+2y+2";
+            String expResult = "-6x+2y+2=0";
             String result = instance.calcula();
             fail();
         } catch (Exception err) {
@@ -73,12 +74,13 @@ public class EquacaoGeralRetaTest {
         }
     }
     
+    //formato incorreto
     @Test
     public void testCalcula5() throws Exception {
         try {
             System.out.println("calcula5");
             EquacaoGeralReta instance = new EquacaoGeralReta("1.5","2.5");
-            String expResult = "-6x+2y+2";
+            String expResult = "-6x+2y+2=0";
             String result = instance.calcula();
             fail();
         } catch (Exception err) {

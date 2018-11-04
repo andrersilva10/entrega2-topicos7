@@ -63,7 +63,7 @@ public class EquacaoGeralReta {
         yPonto2 = pontos[1];
     }
 
-    public void geraMatriz() {
+    private void geraMatriz() {
         this.matriz = new String[][] 
         {
             {xPonto1,yPonto1,"1",xPonto1,yPonto1},
@@ -72,7 +72,7 @@ public class EquacaoGeralReta {
         };
     }
     
-    public String getExpressaoDiagonal(int diagonal,boolean diagonalPrincipal){
+    private String getExpressaoDiagonal(int diagonal,boolean diagonalPrincipal){
         String expressaoNumero = "";
         String expressaoLetra = "";
         String retorno;
@@ -138,6 +138,6 @@ public class EquacaoGeralReta {
         n = (n1 + n2);
         
         
-        return ((x >= 0 ? "+" : "") + x + "x" ) + ((y >= 0 ? "+" : "") + y + "y" ) + ((n >= 0 ? "+" : "") + n);
+        return ((x >= 0 ? "+" : "") + x + "x" ) + ((y >= 0 ? "+" : "") + y + "y" ) + ((n >= 0 ? "+" : "") + n) + "=0";
     }
 }
