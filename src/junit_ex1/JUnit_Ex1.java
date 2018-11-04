@@ -7,7 +7,12 @@ package junit_ex1;
 
 /**
  *
- * @author andre
+ * @authors 
+ * André Rodrigues da Silva 
+ * Jean Marcos Francisco 
+ * Renan Cleverson Laureano Flor da Rosa 
+ * Rafael da Silva Andrade 
+ * Carlos Henrique Gaspari
  */
 public class JUnit_Ex1 {
 
@@ -29,6 +34,9 @@ public class JUnit_Ex1 {
         System.out.println(teste.getExpressaoDiagonal(2, false));
        
         System.out.println(teste.calcula());
+        
+        int[] arr = new int[]{2,3,1,5,4,7};
+        new Ordenador().ordena(arr, false);
     }
     
 }

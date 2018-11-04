@@ -9,7 +9,12 @@ import java.util.*;
 
 /**
  *
- * @author andre
+ * @authors 
+ * André Rodrigues da Silva 
+ * Jean Marcos Francisco 
+ * Renan Cleverson Laureano Flor da Rosa 
+ * Rafael da Silva Andrade 
+ * Carlos Henrique Gaspari
  */
 public class EquacaoGeralReta {
 
