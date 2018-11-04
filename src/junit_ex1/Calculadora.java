@@ -7,22 +7,31 @@ package junit_ex1;
 
 /**
  *
- * @author andre
+ * @authors 
+ * André Rodrigues da Silva 
+ * Jean Marcos Francisco 
+ * Renan Cleverson Laureano Flor da Rosa 
+ * Rafael da Silva Andrade 
+ * Carlos Henrique Gaspari
  */
 public class Calculadora {
-    
-    
-    public double add(double x, double y){
+
+    public double add(double x, double y) {
         return x + y;
     }
-    public double sub(double x, double y){
+
+    public double sub(double x, double y) {
         return x - y;
     }
-    public double mult(double x, double y){
+
+    public double mult(double x, double y) {
         return x * y;
     }
-    public double div(double x, double y) throws IllegalArgumentException{
-        if(y == 0) throw new IllegalArgumentException("Divisão por zero !");
-        return x/y;
+
+    public double div(double x, double y) throws IllegalArgumentException {
+        if (y == 0) {
+            throw new IllegalArgumentException("Divisão por zero !");
+        }
+        return x / y;
     }
 }

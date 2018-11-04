@@ -27,7 +27,7 @@ public class EquacaoGeralReta {
     public EquacaoGeralReta() {
     }
 
-    public EquacaoGeralReta(String ponto1, String ponto2) {
+    public EquacaoGeralReta(String ponto1, String ponto2) throws Exception {
         setPonto1(ponto1);
         setPonto2(ponto2);
     }
@@ -36,8 +36,9 @@ public class EquacaoGeralReta {
         return ponto1;
     }
 
-    public void setPonto1(String ponto1) {
+    public void setPonto1(String ponto1) throws Exception{
         ponto1 = ponto1.replaceAll("\\s","");
+        if(!ponto1.matches("^-?[0-9]+,-?[0-9]+$")) throw new Exception("Ponto 1 não veio no formato correto");
         this.ponto1 = ponto1;
         String[] pontos = ponto1.split(",");
         xPonto1 = pontos[0];
@@ -48,8 +49,9 @@ public class EquacaoGeralReta {
         return ponto2;
     }
 
-    public void setPonto2(String ponto2) {
+    public void setPonto2(String ponto2)throws Exception {
         ponto2 = ponto2.replaceAll("\\s","");
+        if(!ponto2.matches("^-?[0-9]+,-?[0-9]+$")) throw new Exception("Ponto 2 não veio no formato correto");
         this.ponto2 = ponto2;
         String[] pontos = ponto2.split(",");
         xPonto2 = pontos[0];

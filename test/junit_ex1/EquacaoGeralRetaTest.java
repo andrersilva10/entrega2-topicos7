@@ -14,7 +14,12 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author andre
+ * @authors 
+ * André Rodrigues da Silva 
+ * Jean Marcos Francisco 
+ * Renan Cleverson Laureano Flor da Rosa 
+ * Rafael da Silva Andrade 
+ * Carlos Henrique Gaspari
  */
 public class EquacaoGeralRetaTest {
 
@@ -45,12 +50,38 @@ public class EquacaoGeralRetaTest {
     @Test
     public void testCalcula3() throws Exception {
         try {
-            System.out.println("calcula2");
+            System.out.println("calcula3");
             EquacaoGeralReta instance = new EquacaoGeralReta();
             String expResult = "-6x+2y+2";
             String result = instance.calcula();
             fail();
-        }catch(Exception err){
+        } catch (Exception err) {
+            assertTrue(true);
+        }
+    }
+
+    @Test
+    public void testCalcula4() throws Exception {
+        try {
+            System.out.println("calcula4");
+            EquacaoGeralReta instance = new EquacaoGeralReta("formato errado1","formato errado2");
+            String expResult = "-6x+2y+2";
+            String result = instance.calcula();
+            fail();
+        } catch (Exception err) {
+            assertTrue(true);
+        }
+    }
+    
+    @Test
+    public void testCalcula5() throws Exception {
+        try {
+            System.out.println("calcula5");
+            EquacaoGeralReta instance = new EquacaoGeralReta("1.5","2.5");
+            String expResult = "-6x+2y+2";
+            String result = instance.calcula();
+            fail();
+        } catch (Exception err) {
             assertTrue(true);
         }
     }
